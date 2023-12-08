@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="tinkr" translate="label" sortOrder="999">
+            <label>TINKR</label>
+        </tab>
+        <section id="checkout_success" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Checkout Success</label>
+            <tab>tinkr</tab>
+            <resource>Tinkr_CheckoutSuccess::config_tinkr_checkoutsuccess</resource>
+            <group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>General</label>
+                <field id="enabled" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enabled</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="order_id" type="text" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Order ID</label>
+                    <comment>The order ID used to display the checkout success page, this can also be passed as a URL parameter (?order_id=1234)</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,29 @@
+{
+    "name": "tinkr/m2-module-checkout-success",
+    "description": "Module to test the Magento 2 checkout success page",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "keywords": [
+        "magento",
+        "checkout",
+        "success page",
+        "development",
+        "testing"
+    ],
+    "authors": [
+        {
+            "name": "Tinkr Ltd",
+            "email": "dev@tinkr.it"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Tinkr\\CheckoutSuccess\\": ""
+        }
+    }
+}
